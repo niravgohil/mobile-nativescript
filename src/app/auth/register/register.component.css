@@ -1,0 +1,74 @@
+.form {
+    margin-left: 30;
+    margin-right: 30;
+    flex-grow: 4;
+    vertical-align: middle;
+}
+
+.logo {
+    height: 70;
+    margin-top: 15;
+    margin-bottom: 10;
+}
+
+.auth-container {
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10;
+    margin-bottom: 15;
+}
+
+.auth-logo {
+    height: 50;
+    margin: 10;
+}
+
+.input-field {
+    margin-bottom: 25;
+}
+
+.input {
+    font-size: 18;
+    color: #404040;
+    placeholder-color: #A8A8A8;
+}
+
+.input:disabled {
+    background-color: white;
+    opacity: 0.5;
+}
+
+.btn-primary {
+    margin: 30 5 15 5;
+}
+
+.login-label {
+    horizontal-align: center;
+    color: #337ab7;
+    font-size: 16;
+}
+
+.sign-up-label {
+    /* margin-top: 80; */
+}
+
+.bold {
+    color: #337ab7;
+    font-weight: bold;
+}
+
+.mb-20 {
+    margin-bottom: 20;
+}
+
+.mb-60 {
+    margin-bottom: 60;
+}
+
+.mt-80 {
+    margin-top: 90;
+}
+
+.p-20 {
+    padding: 20;
+}

@@ -1,0 +1,36 @@
+{
+	"LOGIN": {
+		"EMAIL": "Email",
+		"PASSWORD": "Passwort",
+		"SIGN.IN": "Anmeldung",
+		"FORGOT.PASSWORD": "Passwort vergessen?",
+		"SIGN.UP": "Anmelden",
+		"USER.LOGIN.SUCCESS": "Der Benutzer hat sich erfolgreich angemeldet.",
+		"PLEASE.ENTER.EMAIL": "Bitte geben Sie eine E-Mail an",
+		"PLEASE.ENTER.PASSWORD": "Bitte Passwort eingeben",
+		"PLEASE.ENTER.VALID.EMAIL": "bitte eine gültige E-Mail-Adresse eintragen",
+		"FORGOT.PASSWORD.TITLE": "Passwort vergessen",
+		"FORGOT.PASSWORD.MESSAGE": "Geben Sie die E-Mail-Adresse ein, mit der Sie sich bei XcooBee registriert haben, um Ihr Passwort zurückzusetzen.",
+		"FORGOT.OK": "Ok",
+		"FORGOT.CANCEL": "Stornieren",
+		"FORGOT.PASSWORD.CHANGE.SUCCESS": "Ihr Passwort wurde erfolgreich zurückgesetzt. Bitte überprüfen Sie Ihre E-Mail mit Anweisungen zur Auswahl eines neuen Passworts."
+	},
+	"REGISTER": {
+		"BACK":"Zurück",
+		"FIRST.NAME": "Vorname",
+		"LAST.NAME": "Last name",
+		"EMAIL": "Email",
+		"PASSWORD": "Passwort",
+		"CONFIRM.PASSWORD": "Passwort bestätigen",
+		"SIGN.UP": "Anmelden",
+		"BACK.TO.LOGIN": "Zurück zur Anmeldung",
+		"PLEASE.ENTER.FIRST.NAME": "Bitte geben Sie den Vornamen ein",
+		"PLEASE.ENTER.LAST.NAME": "Bitte geben Sie den Nachnamen ein",
+		"PLEASE.ENTER.EMAIL": "Bitte geben Sie eine E-Mail an",
+		"PLEASE.ENTER.VALID.EMAIL": "bitte eine gültige E-Mail-Adresse eintragen",
+		"PLEASE.ENTER.PASSWORD": "Bitte Passwort eingeben",
+		"PLEASE.ENTER.CONFIRM.PASSWORD": "Bitte geben Sie Ihr Passwort ein",
+		"PLEASE.ENTER.CONFIRM.PASSWORD.NOT.MATCH": "Passwort bestätigen stimmt nicht mit Passwort überein",
+		"USER.SIGN.UP.SUCCESS": "Der Benutzer hat sich erfolgreich angemeldet."
+	}
+}

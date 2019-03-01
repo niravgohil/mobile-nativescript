@@ -1,0 +1,59 @@
+<ScrollView>
+    <FlexboxLayout class="page" *ngIf="!isSubmitButtonClicked">
+        <StackLayout class="form" [formGroup]="loginForm">
+
+            <FlexboxLayout class="auth-container mb-60">
+                <StackLayout orientation="vertical">
+                    <Image class="logo" src="~/assets/images/xcoobee-logo.png"></Image>
+                </StackLayout>
+            </FlexboxLayout>
+
+            <FlexboxLayout class="auth-container mb-10">
+                <StackLayout orientation="horizontal">
+                    <Image class="auth-logo" (tap)="facebookAuthentication()" src="~/assets/images/facebook-auth.png">
+                    </Image>
+                    <Image class="auth-logo" (tap)="googleAuthentication()" src="~/assets/images/google-auth.png">
+                    </Image>
+                </StackLayout>
+            </FlexboxLayout>
+
+            <GridLayout rows="auto" columns="auto,auto,auto,auto" class="lang-container" horizontalAlignment="center">
+                <Label row="0" col="0" class="lang-name" text="English" (tap)="english()" textWrap="true"></Label>
+                <Label row="0" col="1" class="lang-name" text="French" (tap)="french()" textWrap="true"></Label>
+                <Label row="0" col="2" class="lang-name" text="Spanish" (tap)="spanish()" textWrap="true"></Label>
+                <Label row="0" col="3" class="lang-name" text="German" (tap)="german()" textWrap="true"></Label>
+            </GridLayout>
+
+            <GridLayout rows="auto, auto, auto, auto, auto">
+                <StackLayout row="2" class="input-field">
+                    <TextField class="input" [hint]="'LOGIN.EMAIL' | translate" keyboardType="email" autocorrect="false"
+                        formControlName="email" id="email">
+                    </TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+                <StackLayout row="3" class="input-field">
+                    <TextField class="input" secure="true" id="password" [hint]="'LOGIN.PASSWORD' | translate" formControlName="password">
+                    </TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+            </GridLayout>
+
+            <Button [text]="'LOGIN.SIGN.IN' | translate" (tap)="signIn()" class="btn btn-primary p-20  bold" backgroundColor="#F1BE16"
+                color="#FFF"></Button>
+
+            <Label [text]="'LOGIN.FORGOT.PASSWORD' | translate" class="login-label" (tap)="forgotPassword()"></Label>
+
+            <Label class="login-label sign-up-label mt-70" (tap)="goToRegister()" ios:marginBottom="30">
+                <FormattedString>
+                    <Span [text]="'LOGIN.SIGN.UP' | translate"></Span>
+                </FormattedString>
+            </Label>
+
+        </StackLayout>
+    </FlexboxLayout>
+    <StackLayout style="margin:0 auto; margin-top: 250" *ngIf="isSubmitButtonClicked">
+        <ActivityIndicator row="1" #activityIndicator busy="{{isSubmitButtonClicked}}" width="100" height="100"
+            class="activity-indicator">
+        </ActivityIndicator>
+    </StackLayout>
+</ScrollView>

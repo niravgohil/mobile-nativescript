@@ -1,0 +1,36 @@
+{
+	"LOGIN": {
+		"EMAIL": "Email",
+		"PASSWORD": "Contraseña",
+		"SIGN.IN": "iniciar sesión",
+		"FORGOT.PASSWORD": "¿Se te olvidó tu contraseña?",
+		"SIGN.UP": "Regístrate",
+		"USER.LOGIN.SUCCESS": "El usuario inicia sesión con éxito.",
+		"PLEASE.ENTER.EMAIL": "Por favor ingrese su email",
+		"PLEASE.ENTER.PASSWORD": "Por favor, ingrese contraseña",
+		"PLEASE.ENTER.VALID.EMAIL": "Por favor introduzca un correo electrónico válido",
+		"FORGOT.PASSWORD.TITLE": "Se te olvidó tu contraseña",
+		"FORGOT.PASSWORD.MESSAGE": "Ingrese la dirección de correo electrónico que usó para registrarse en XcooBee para restablecer su contraseña.",
+		"FORGOT.OK": "De acuerdo",
+		"FORGOT.CANCEL": "Cancelar",
+		"FORGOT.PASSWORD.CHANGE.SUCCESS": "Su contraseña fue restablecida con éxito. Por favor, consulte su correo electrónico para obtener instrucciones sobre cómo elegir una nueva contraseña."
+	},
+	"REGISTER": {
+		"BACK":"Espalda",
+		"FIRST.NAME": "Nombre de pila",
+		"LAST.NAME": "Apellido",
+		"EMAIL": "Email",
+		"PASSWORD": "Contraseña",
+		"CONFIRM.PASSWORD": "Confirmar contraseña",
+		"SIGN.UP": "Regístrate",
+		"BACK.TO.LOGIN": "Atrás para iniciar sesión",
+		"PLEASE.ENTER.FIRST.NAME": "Por favor ingrese su nombre",
+		"PLEASE.ENTER.LAST.NAME": "Por favor ingrese el apellido",
+		"PLEASE.ENTER.EMAIL": "Por favor ingrese su email",
+		"PLEASE.ENTER.VALID.EMAIL": "Por favor introduzca un correo electrónico válido",
+		"PLEASE.ENTER.PASSWORD": "Por favor, ingrese contraseña",
+		"PLEASE.ENTER.CONFIRM.PASSWORD": "Por favor ingrese confirmar contraseña",
+		"PLEASE.ENTER.CONFIRM.PASSWORD.NOT.MATCH": "Confirmar contraseña no coincide con contraseña",
+		"USER.SIGN.UP.SUCCESS": "Usuario registrado correctamente."
+	}
+}

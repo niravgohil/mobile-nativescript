@@ -1,0 +1,36 @@
+{
+	"LOGIN": {
+		"EMAIL": "Email",
+		"PASSWORD": "Mot de passe",
+		"SIGN.IN": "s'identifier",
+		"FORGOT.PASSWORD": "Mot de passe oublié?",
+		"SIGN.UP": "S'inscrire",
+		"USER.LOGIN.SUCCESS": "Connexion de l'utilisateur avec succès.",
+		"PLEASE.ENTER.EMAIL": "S'il vous plaît entrer email",
+		"PLEASE.ENTER.PASSWORD": "Veuillez entrer le mot de passe",
+		"PLEASE.ENTER.VALID.EMAIL": "S'il vous plaît entrer email valide",
+		"FORGOT.PASSWORD.TITLE": "Mot de passe oublié",
+		"FORGOT.PASSWORD.MESSAGE": "Entrez l'adresse e-mail que vous avez utilisée pour vous inscrire à XcooBee afin de réinitialiser votre mot de passe.",
+		"FORGOT.OK": "D'accord",
+		"FORGOT.CANCEL": "Annuler",
+		"FORGOT.PASSWORD.CHANGE.SUCCESS": "Votre mot de passe a été réinitialisé avec succès. Veuillez vérifier votre courrier électronique pour savoir comment choisir un nouveau mot de passe."
+	},
+	"REGISTER": {
+		"BACK":"Retour",
+		"FIRST.NAME": "Prénom",
+		"LAST.NAME": "Nom de famille",
+		"EMAIL": "Email",
+		"PASSWORD": "Mot de passe",
+		"CONFIRM.PASSWORD": "Confirmez le mot de passe",
+		"SIGN.UP": "S'inscrire",
+		"BACK.TO.LOGIN": "Retour connexion",
+		"PLEASE.ENTER.FIRST.NAME": "S'il vous plaît entrer le prénom",
+		"PLEASE.ENTER.LAST.NAME": "S'il vous plaît entrer le nom de famille",
+		"PLEASE.ENTER.EMAIL": "S'il vous plaît entrer email",
+		"PLEASE.ENTER.VALID.EMAIL": "S'il vous plaît entrer email valide",
+		"PLEASE.ENTER.PASSWORD": "Veuillez entrer le mot de passe",
+		"PLEASE.ENTER.CONFIRM.PASSWORD": "Veuillez entrer votre mot de passe",
+		"PLEASE.ENTER.CONFIRM.PASSWORD.NOT.MATCH": "Confirmer le mot de passe ne correspond pas au mot de passe",
+		"USER.SIGN.UP.SUCCESS": "Utilisateur connecté avec succès."
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"LOGIN": {
+		"EMAIL": "Email",
+		"PASSWORD": "Password",
+		"SIGN.IN": "LOG IN",
+		"FORGOT.PASSWORD": "Forgot Password?",
+		"SIGN.UP": "Sign up",
+		"USER.LOGIN.SUCCESS": "User sign in successfully.",
+		"PLEASE.ENTER.EMAIL": "Please enter email",
+		"PLEASE.ENTER.PASSWORD": "Please enter password",
+		"PLEASE.ENTER.VALID.EMAIL": "Please enter valid email",
+		"FORGOT.PASSWORD.TITLE": "Forgot Password",
+		"FORGOT.PASSWORD.MESSAGE": "Enter the email address you used to register for XcooBee to reset your password.",
+		"FORGOT.OK": "Ok",
+		"FORGOT.CANCEL": "Cancel",
+		"FORGOT.PASSWORD.CHANGE.SUCCESS": "Your password was successfully reset. Please check your email for instructions on choosing a new password."
+	},
+	"REGISTER": {
+		"BACK":"Back",
+		"FIRST.NAME": "First name",
+		"LAST.NAME": "Last name",
+		"EMAIL": "Email",
+		"PASSWORD": "Password",
+		"CONFIRM.PASSWORD": "Confirm password",
+		"SIGN.UP": "Sign up",
+		"BACK.TO.LOGIN": "Back to Login",
+		"PLEASE.ENTER.FIRST.NAME": "Please enter first name",
+		"PLEASE.ENTER.LAST.NAME": "Please enter last name",
+		"PLEASE.ENTER.EMAIL": "Please enter email",
+		"PLEASE.ENTER.VALID.EMAIL": "Please enter valid email",
+		"PLEASE.ENTER.PASSWORD": "Please enter password",
+		"PLEASE.ENTER.CONFIRM.PASSWORD": "Please enter confirm password",
+		"PLEASE.ENTER.CONFIRM.PASSWORD.NOT.MATCH": "Confirm password doesn't match to password",
+		"USER.SIGN.UP.SUCCESS": "User signed up successfully."
+	}
+}

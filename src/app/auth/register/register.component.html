@@ -1,0 +1,71 @@
+<ActionBar [title]="'REGISTER.BACK' | translate" class="action-bar" (tap)="goBack()">
+    <NavigationButton android.systemIcon="ic_menu_back" text="" (tap)="goBack()"></NavigationButton>
+</ActionBar>
+<ScrollView>
+    <FlexboxLayout class="page" *ngIf="!isSubmitButtonClicked">
+        <StackLayout class="form" [formGroup]="registerForm">
+            <FlexboxLayout class="auth-container" ios:marginTop="-20">
+                <StackLayout orientation="vertical">
+                    <Image class="logo" src="~/assets/images/xcoobee-logo.png"></Image>
+                </StackLayout>
+            </FlexboxLayout>
+
+            <FlexboxLayout class="auth-container mb-20">
+                <StackLayout orientation="horizontal">
+                    <Image class="auth-logo" (tap)="facebookAuthentication()" src="~/assets/images/facebook-auth.png">
+                    </Image>
+                    <Image class="auth-logo" (tap)="googleAuthentication()" src="~/assets/images/google-auth.png">
+                    </Image>
+                </StackLayout>
+            </FlexboxLayout>
+
+            <GridLayout rows="auto, auto, auto, auto, auto">
+                <StackLayout row="0" class="input-field">
+                    <TextField class="input" [hint]="'REGISTER.FIRST.NAME' | translate" formControlName="firstName" id="first">
+                    </TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="1" class="input-field">
+                    <TextField class="input" [hint]="'REGISTER.LAST.NAME' | translate" formControlName="lastName">
+                    </TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="2" class="input-field">
+                    <TextField class="input" [hint]="'REGISTER.EMAIL' | translate" keyboardType="email" autocorrect="false"
+                        formControlName="email" id="email">
+                    </TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="3" class="input-field">
+                    <TextField class="input" secure="true" id="password" [hint]="'REGISTER.PASSWORD'| translate" formControlName="password">
+                    </TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="4" class="input-field">
+                    <TextField class="input" secure="true" [hint]="'REGISTER.CONFIRM.PASSWORD' | translate" formControlName="confirmPassword">
+                    </TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+            </GridLayout>
+
+            <Button [text]="'REGISTER.SIGN.UP' | translate" (tap)="signUp()" class="btn btn-primary p-20 bold" backgroundColor="#F1BE16"
+                color="#FFF"></Button>
+
+            <Label class="login-label sign-up-label mb-20" (tap)="goToRegister()" ios:marginBottom="50">
+                <FormattedString>
+                    <Span [text]="'REGISTER.BACK.TO.LOGIN' | translate" class="bold"></Span>
+                </FormattedString>
+            </Label>
+
+        </StackLayout>
+    </FlexboxLayout>
+    <StackLayout style="margin:0 auto; margin-top: 250" *ngIf="isSubmitButtonClicked">
+        <ActivityIndicator row="1" #activityIndicator busy="{{isSubmitButtonClicked}}" width="100" height="100"
+            class="activity-indicator">
+        </ActivityIndicator>
+    </StackLayout>
+</ScrollView>
