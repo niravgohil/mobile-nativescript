@@ -18,10 +18,10 @@
             </FlexboxLayout>
 
             <GridLayout rows="auto" columns="auto,auto,auto,auto" class="lang-container" horizontalAlignment="center">
-                <Label row="0" col="0" class="lang-name" text="English" (tap)="english()" textWrap="true"></Label>
-                <Label row="0" col="1" class="lang-name" text="French" (tap)="french()" textWrap="true"></Label>
-                <Label row="0" col="2" class="lang-name" text="Spanish" (tap)="spanish()" textWrap="true"></Label>
-                <Label row="0" col="3" class="lang-name" text="German" (tap)="german()" textWrap="true"></Label>
+                <Label row="0" col="0" class="lang-name" text="English" (tap)="setLanguage('en')" textWrap="true"></Label>
+                <Label row="0" col="1" class="lang-name" text="French" (tap)="setLanguage('fr')" textWrap="true"></Label>
+                <Label row="0" col="2" class="lang-name" text="Spanish" (tap)="setLanguage('es')" textWrap="true"></Label>
+                <Label row="0" col="3" class="lang-name" text="German" (tap)="setLanguage('de')" textWrap="true"></Label>
             </GridLayout>
 
             <GridLayout rows="auto, auto, auto, auto, auto">

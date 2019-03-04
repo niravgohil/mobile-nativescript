@@ -1,8 +1,11 @@
-import { Component } from "@angular/core";
+import { Component, NgZone } from "@angular/core";
 import { environment } from "../environments/environment";
-
-// import { isAndroid, isIOS, device, screen } from "tns-core-modules/platform";
 import { TranslateService } from "@ngx-translate/core";
+import * as Platform from "tns-core-modules/platform";
+import {
+    ApplicationEventData, off as applicationOff, on as applicationOn, resumeEvent
+} from "tns-core-modules/application";
+
 @Component({
     selector: "ns-app",
     moduleId: module.id,
@@ -11,24 +14,38 @@ import { TranslateService } from "@ngx-translate/core";
 export class AppComponent {
 
     constructor(
-        private translate: TranslateService
+        private translate: TranslateService,
+        private ngZone: NgZone,
     ) {
         this.translate.setDefaultLang("en");
-        // this.translate.use(device.language.split("-")[0]);
-        this.translate.use("en");
+        this.setLocalFromDevice()
+        this.registerLifeCycleEvent();
+    }
 
-        console.log(this.translate.getDefaultLang());
+    setLocalFromDevice(): any {
+        let language;
+        if (Platform.isAndroid) {
+            language = java.util.Locale.getDefault().getLanguage();
+        } else if (Platform.isIOS) {
+            language = NSLocale.preferredLanguages.firstObject;
+        }
+        if (!language) {
+            language = Platform.device.language;
+        }
 
-        console.log(this.translate.instant('HOME.TITLE'));
-        console.log(environment.apiUrl);
-        // console.log(JSON.stringify(device));
-        // console.log("Language => " + device.language);
-
-        // console.log("Language Name => " + device.language.split("-")[0]);
-
-        // console.log("isAndroid => " + isAndroid);
-        // console.log("isIOS => " + isIOS);
+        const langArray = language.split("-");
+        this.translate.use(langArray[0]);
 
     }
 
+    resumeCallBack(args: ApplicationEventData) {
+        this.ngZone.run(() => {
+            this.setLocalFromDevice();
+        });
+    }
+
+    registerLifeCycleEvent(): any {
+        applicationOff(resumeEvent);
+        applicationOn(resumeEvent, this.resumeCallBack, this);
+    }
 }

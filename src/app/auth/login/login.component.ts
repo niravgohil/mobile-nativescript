@@ -34,16 +34,11 @@ export class LoginComponent implements OnInit, OnDestroy {
         // private messageMaager: MessageManager
         private translate: TranslateService
     ) {
-        // this.translate.setDefaultLang("en");
-        // this.translate.use(device.language.split("-")[0]);
-        // this.translate.use("en");
     }
 
     ngOnInit(): void {
         this.isSubmitButtonClicked = false;
         this._page.actionBarHidden = true;
-        console.log(this.translate.instant('HOME.TITLE'));
-
         this.buildForm();
     }
 
@@ -127,24 +122,8 @@ export class LoginComponent implements OnInit, OnDestroy {
         console.log("googleAuthentication Method Called");
     }
 
-    english(){
-        console.log("en");
-        this.translate.use("en");
-    }
-
-    french(){
-        console.log("fr");
-        this.translate.use("fr");
-    }
-
-    spanish(){
-        console.log("sn");
-        this.translate.use("sn");
-    }
-
-    german(){
-        console.log("gn");
-        this.translate.use("gn");
+    setLanguage(args){
+        this.translate.use(args);
     }
 
     goToRegister() {
